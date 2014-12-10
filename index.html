@@ -1,8 +1,8 @@
-<html>
-	<head>
-		<title>Aljosa</title>
-	</head>
-	<body>
-		<h1>Aljosa</h1>
-	</body>
-</html>
+---
+layout: default
+title: Home
+---
+
+{% assign page = site.posts.first %}
+{% assign content = page.content %}
+{% include post.html %}
